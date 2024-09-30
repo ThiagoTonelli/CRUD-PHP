@@ -36,7 +36,7 @@ Este projeto consiste no desenvolvimento de um protótipo para o sistema de Cham
 
 A estrutura do projeto está organizada da seguinte forma:
 
-\`\`\`bash
+```bash
 trabalhoBD
 │
 ├── Config
@@ -81,7 +81,7 @@ trabalhoBD
 │       └── Imagens/                        # Imagens para visualizar chamados
 │
 └── index.php/
-\`\`\`
+
 
 ## Configuração do Ambiente
 
