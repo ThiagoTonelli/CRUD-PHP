@@ -81,7 +81,7 @@ trabalhoBD
 │       └── Imagens/                        # Imagens para visualizar chamados
 │
 └── index.php/
-
+````
 
 ## Configuração do Ambiente
 
