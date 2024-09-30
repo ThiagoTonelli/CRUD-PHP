@@ -98,7 +98,7 @@ trabalhoBD
 
    ```bash
    git clone git@github.com:kailanyas/projeto-banco-de-dados.git
-   ```
+   
 
 2. **Configurar o Banco de Dados:**  
    No diretório do projeto, existe um arquivo SQL com o script de criação das tabelas e dados de exemplo. Para configurar o banco de dados:
@@ -106,11 +106,11 @@ trabalhoBD
    - Abra o terminal e conecte-se ao PostgreSQL:
      ```bash
      psql -U seu_usuario -d seu_banco_de_dados
-     ```
+     
    - Importe o arquivo `banco-de-dados/script.sql` para criar as tabelas necessárias:
      ```bash
      \i caminho/para/o/script.sql
-     ```
+     
 
 3. **Configurar a Conexão com o Banco de Dados:**  
    No arquivo `Config/dataBase.php`, você deverá ajustar as credenciais de conexão ao banco de dados de acordo com o ambiente local:
