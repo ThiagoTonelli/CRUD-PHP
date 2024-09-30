@@ -1,0 +1,589 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+header {
+    font-family: 'Montserrat', sans-serif; /* Fonte do cabeçalho */
+    font-size: 12.9999px; /* Tamanho da fonte do cabeçalho */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupa a altura total da janela */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Cabeçalho */
+.header-top {
+    display: flex;
+    background-color: #104382;
+    height: 28.59px;
+}
+
+.header-bottom {
+    background-color: white;
+    height: 132px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    margin-left: 300px;
+    width: 180px;
+    height: 51px;
+}
+
+.logo-container::after {
+    content: "";
+    display: inline-block;
+    height: 54px; /* Altura da barra */
+    width: 1px; /* Espessura da barra */
+    background-color: #0000001A; /* Cor da barra */
+    margin-left: 20px; /* Espaço entre o logo e a barra */
+}
+
+.city-name {
+    margin-left: 320px;
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 800px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px;
+}
+
+
+.call-list {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.call-list-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Faz com que o botão ocupe toda a largura */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.call-list-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+
+.call-item h2 {
+    margin: 0 0 10px 0; /* Margem do título */
+}
+
+.call-item p {
+    margin: 5px 0; /* Margem dos parágrafos */
+}
+
+
+.call-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.call-status {
+    font-weight: bold;
+}
+
+.login-title {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #104382;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login-form {
+    width: 100%;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #104382;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.extra-options {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password, .register a {
+    color: #104382;
+    font-weight: 800;
+}
+
+.register {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Estilização do footer */
+/* Estilização do body */
+
+
+/* Estilização do footer */
+footer {
+    font-family: 'Hind', sans-serif; /* Fonte do rodapé */
+    font-size: 14.96px; /* Tamanho da fonte do rodapé */
+    background-color: #104382; /* Cor do fundo */
+    padding: 20px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Largura total */
+    margin-top: auto; /* Faz o footer se mover para o final */
+}
+
+/* Estilização do footer com conteúdo */
+.footer-content {
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espaçar conteúdo entre os extremos */
+    align-items: center; /* Alinha verticalmente ao centro */
+    height: 160px; /* Altura do footer */
+}
+
+/* Estilos para as seções do footer */
+.footer-left, .footer-center, .footer-right {
+    flex: 1; /* Distribui igualmente o espaço */
+    text-align: letf; /* Centraliza o texto */
+}
+
+/* Diminuir a fonte no footer-right */
+.footer-right {
+    font-size: 14px; /* Diminui o tamanho da fonte */
+    text-align: right; /* Alinha à direita */
+    margin-right: 150px; /* Ajuste o valor conforme necessário */
+}
+
+/* Aumentar o zoom da imagem */
+.footer-logo {
+    height: 150px; /* Ajuste conforme o necessário */
+}
+
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links a {
+    color: #88A1B7;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* Estilização do cabeçalho */
+.header-top {
+    display: flex; /* Adicionado para usar flexbox */
+    justify-content: space-between; /* Para espaçar os itens */
+    align-items: center; /* Para alinhar verticalmente */
+    padding: 10px 20px; /* Adicionado espaçamento interno */
+}
+
+/* Cabeçalho inferior */
+.header-bottom {
+    height:108px;
+    display: flex; /* Usando flexbox para alinhar itens */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça entre os itens */
+    padding: 21.7124px 23.1132px; /* Espaçamento interno */
+    background-color: white; /* Cor de fundo branca */
+    border-top: 2px solid #104382; /* Borda superior */
+}
+
+/* Navegação no cabeçalho */
+.top-nav {
+    margin-right: 320px; /* Espaçamento à direita da navegação */
+}
+
+.top-nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline; /* Exibe os itens em linha */
+    margin-left: 20px; /* Espaçamento entre os itens */
+    position: relative;
+}
+
+.top-nav ul li::after {
+    content: "|"; /* Adiciona a barra vertical */
+    margin-left: 10px; /* Espaço antes da barra */
+    color: rgba(255, 255, 255, 0.50); /* Cor da barra */
+}
+
+.top-nav ul li:last-child::after {
+    content: ""; /* Remove a barra do último item */
+}
+
+.top-nav ul li a {
+    color: rgba(255, 255, 255, 0.5); /* Cor branca com 80% de opacidade */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800; /* Deixa o texto em negrito */
+    font-size: 13px;
+    transition: color 0.3s, filter 0.3s; /* Transição suave para a cor e opacidade */
+}
+
+.top-nav ul li:hover img {
+    filter: brightness(1.5); /* Aumenta o brilho dos ícones */
+    transition: filter 0.3s ease; /* Transição suave para o efeito de brilho */
+}
+
+.top-nav ul li:hover a {
+    color: #f0f0f0; /* Muda a cor do texto ao passar o mouse */
+}
+
+.top-nav ul li img {
+    width: 13px; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    vertical-align: middle; /* Alinha a imagem ao centro verticalmente */
+    margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+}
+
+.main-nav {
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+.main-nav ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; /* Aumente o tamanho da fonte aqui */
+    list-style: none; /* Remove os marcadores da lista */
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Itens em linha */
+}
+
+.main-nav li {
+    margin-right: 20px; /* Espaço entre os links */
+}
+
+.main-nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Cor do texto dos links */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+.main-nav a:hover {
+    color: #CC123F; /* Muda a cor do texto para vermelho ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+
+.a1 {
+    width: 100%; /* Largura total */
+    height: 4px; /* Altura da barra */
+    background-color: #104382; /* Cor da barra */
+    margin-bottom: 10px; /* Espaçamento abaixo da barra */
+}
+
+
+/* Estilização da barra de pesquisa */
+.search-container {
+    margin-right: 320px;
+    position: relative; /* Define o contexto de posicionamento para o ícone */
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute; /* Posiciona o ícone sobre o input */
+    left: 10px; /* Ajusta a posição à esquerda */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a lupa */
+    justify-content: center;
+    height: 100%; /* Faz o ícone ocupar toda a altura do campo de entrada */
+}
+
+.search-icon img {
+    width: 16px; /* Ajusta o tamanho da lupa */
+    height: 16px;
+}
+
+.search-container input {
+    padding-left: 35px; /* Espaço suficiente para o ícone dentro da barra de pesquisa */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 210px; /* Largura da barra de pesquisa */
+    height: 43px;
+}
+
+
+
+.slista {
+    font-size: 17px;
+    padding: 20px; /* Simplificado para um padding uniforme */
+    margin-right: 300px; /* Ajuste da margem direita */
+    font-weight: normal;
+}
+
+.secretaria {
+    color: #FFFF;
+    margin-left: 320px; /* Ajustado para um espaço mais uniforme */
+    padding: 20px; 
+    font-size: 14px;
+}
+
+
+.barra {
+    height:74.84px;
+    background-color: #CC123F; /* Cor da barra */
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espaçar conteúdo entre os extremos */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.barra h1 {
+    color: white; /* Cor do título */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.barra ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.barra li {
+    display: inline; /* Exibe os itens em linha */
+    margin-right: 20px; /* Espaço entre os itens */
+}
+
+.barra a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.barra a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1366px) {
+    .logo {
+        margin-left: 100px;
+        width: 150px; /* Ajuste para largura de logo menor */
+    }
+
+    .login-container {
+        margin: 20px; /* Margem menor para conteúdo */
+        padding: 30px; /* Padding menor */
+    }
+
+    .login-title {
+        font-size: 32px; /* Reduz o tamanho do título */
+    }
+
+    .login-btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .search-container {
+        margin-right: 10px; /* Ajuste na margem */
+    }
+
+    .slista {
+        font-size: 15px; /* Ajuste no tamanho da fonte */
+        padding: 10px; /* Ajuste no padding */
+        margin-right: 20px; /* Margem direita reduzida */
+    }
+
+    .secretaria {
+        margin-left: 120px; /* Ajuste para margem esquerda */
+    }
+
+    .city-name {
+        margin-left: 120px;
+    }
+    .top-nav { /* Substitua pelos seletores reais usados no seu HTML */
+    margin-right: 20px; /* Ajuste a margem conforme necessário */
+    }
+    .login-container{
+        margin-left: 320px;
+    }
+}
+
+/* Para dispositivos móveis (largura máxima de 768px) */
+@media (max-width: 768px) {
+    /* Ajusta o header */
+    .header-top, .header-bottom {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        justify-content: center; /* Centraliza os itens */
+    }
+
+    .logo-container {
+        margin: 0 auto; /* Centraliza a logo */
+        padding: 10px 0; /* Reduz o padding */
+    }
+
+    /* Ajusta a barra de navegação */
+    .top-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav ul li {
+        margin: 10px 0; /* Adiciona margem entre os itens */
+    }
+
+    /* Ajuste no tamanho da logo e barra de pesquisa */
+    .logo {
+        margin-left: 0;
+        width: 180px;
+        height: auto;
+    }
+
+    .search-container {
+        margin-right: 0;
+    }
+
+    .search-container input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Ajusta o conteúdo principal */
+    .login-container {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 100%;
+    }
+
+    .login-title {
+        font-size: 30px; /* Diminui o tamanho do título */
+    }
+
+    .login-btn {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* Ajustes no footer */
+    .footer-content {
+        flex-direction: column; /* Alinha em coluna */
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        margin-bottom: 10px;
+    }
+
+    /* Links de redes sociais em coluna */
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Para dispositivos muito pequenos (largura máxima de 480px) */
+@media (max-width: 480px) {
+    /* Ajuste nos tamanhos de texto */
+    header {
+        font-size: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Ajusta o cabeçalho */
+    .header-top, .header-bottom {
+        height: auto; /* Ajusta automaticamente a altura */
+        padding: 10px;
+    }
+
+    .city-name {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Barra de navegação mais compacta */
+    .top-nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .top-nav ul li {
+        margin-left: 0;
+    }
+
+    /* Ajuste no botão de login */
+    .login-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Ajusta o rodapé */
+    footer {
+        font-size: 12px;
+    }
+    
+    .footer-logo {
+        height: 100px; /* Ajusta o tamanho da logo no footer */
+    }
+}
