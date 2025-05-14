@@ -1,7 +1,7 @@
 # Sistema de Chamados de Obras - Secretaria de Obras Municipal
 
 **Desenvolvedores:**  
-- [@kailanyas](https://github.com/kailanyas)  
+- [Kailany Alves Silva](https://github.com/kailanyas)  
 - Lukas Rodrigues Basilio  
 - Ryan Carlos Sarcinelli  
 - Thiago Tonelli da Silva  
